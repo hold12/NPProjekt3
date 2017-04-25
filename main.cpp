@@ -50,5 +50,5 @@ int main()
 
 	client.CloseCon();
     data.CloseCon();
-	return 0;
+	return 0; // test
 }
