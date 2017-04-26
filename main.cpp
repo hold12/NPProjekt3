@@ -32,7 +32,7 @@ int main()
 
     // passive mode
     client.SendMsg("PASV\r\n", 6);
-    client.RecvMsg();
+    //client.RecvMsg();
 
 
     // bruger sscan til at læse svaret fra FTP serveren
