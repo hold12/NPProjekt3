@@ -12,7 +12,7 @@
 #include <fstream>
 
 using namespace std;
-class FTPClient
+class NP
 {
 public:
 	void Connect(int port, char *adr);

@@ -11,7 +11,7 @@ int main()
 
     int dataPort,a1,a2,a3,a4,p1,p2;
 
-    FTPClient client, data;
+    NP client, data;
 
     client.Connect(21, adressP);
     client.RecvMsg();
