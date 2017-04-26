@@ -53,7 +53,7 @@ int main()
     // The following will fail
 //    client.SendMsg("LIST\r\n", 6);
 
-	client.RecvMsg();
+	//client.RecvMsg();
 	data.RecvMsg();
 
 
