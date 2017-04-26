@@ -53,7 +53,10 @@ int main()
     client.RecvMsg();
     client.RecvMsg();
 
+    cout << "closing client" << endl;
+
 	client.CloseCon();
+    cout << "closing data" << endl;
     data.CloseCon();
 	return 0; // test
 }
