@@ -19,7 +19,7 @@ int main()
     client.SendMsg("HELLO\r\n", 7);
     client.RecvMsg();
 
-    client.SendMsg("USER anonymous\r\n", 13);
+    client.SendMsg("USER anonymous\r\n", 16);
     client.RecvMsg();
     client.SendMsg("PASS 1234\r\n", 11);
     client.RecvMsg();
