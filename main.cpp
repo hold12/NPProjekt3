@@ -45,7 +45,7 @@ int main()
     cout << "Data addressP: " << adressP << endl;
     data.Connect(dataPort, adressP);
 
-    client.SendMsg("RETR test.txt\r\n", 15);
+    client.SendMsg("RETR data.csv\r\n", 15);
 	
     data.SaveFile("/var/www/data.csv");
 	//data.SaveFile("test.txt");
