@@ -16,7 +16,7 @@ int main()
     client.Connect(21, adressP);
     client.RecvMsg();
 
-    client.SendMsg("HELLO\r\n", 7)
+    client.SendMsg("HELLO\r\n", 7);
     client.RecvMsg();
 
     client.SendMsg("USER anonym\r\n", 13);
