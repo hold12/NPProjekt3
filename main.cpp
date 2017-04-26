@@ -38,7 +38,7 @@ int main()
     * data connection START *******************
     */
     cout << "Data port: " << dataPort << endl;
-    cout << "Data addressP: " << addressP << endl;
+    cout << "Data addressP: " << adressP << endl;
     data.Connect(dataPort, adressP);
     // The following will fail
 //    client.SendMsg("LIST\r\n", 6);
