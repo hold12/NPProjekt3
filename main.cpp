@@ -66,7 +66,7 @@ int main()
 int GetNewPort(string str)
 {
     stringstream ss(str);
-    for (auto i = 0; i < 4; i++)
+    for (int i = 0; i < 4; i++)
         getline(ss, str, ',');
 
     int num1, num2;
