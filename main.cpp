@@ -52,7 +52,7 @@ int main()
 
     client.RecvMsg();
     cout << "receive 2" << endl;
-    client.RecvMsg();
+    //client.RecvMsg();
 
     cout << "closing client" << endl;
 
