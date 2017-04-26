@@ -1,5 +1,9 @@
 #include <iostream>
 #include "src/NP.cpp"
+#include <sstream>
+#include <fstream>
+#include <string.h> // strlen
+#include <string>   // string
 
 
 using namespace std;
