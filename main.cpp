@@ -51,6 +51,7 @@ int main()
 	//data.SaveFile("test.txt");
 
     client.RecvMsg();
+    cout << "receive 2" << endl;
     client.RecvMsg();
 
     cout << "closing client" << endl;
