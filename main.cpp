@@ -37,7 +37,8 @@ int main()
 
     // bruger sscan til at læse svaret fra FTP serveren
     //sscanf(client.RecvMsg(), "227 Entering Passive Mode (%d,%d,%d,%d,%d,%d).\r\n", &a1, &a2, &a3, &a4, &p1, &p2);
-    dataPort = GetNewPort(string(client.RecvMsg());
+    string pasv_message = string(client.RecvMsg());
+    dataPort = GetNewPort(pasv_message);
     dataPort = (p1 * 256) + p2;
 
 
