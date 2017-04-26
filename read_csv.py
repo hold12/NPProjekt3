@@ -13,6 +13,7 @@ for i in csv_list[1::]:
    if itotal > highest_value:
       highest_value = itotal
 
+os.remove('higest.txt')
 file = open('highest.txt', 'w')
 file.write(str(highest_value))
 file.close
