@@ -1,5 +1,5 @@
-import csv, os
-with open('data.csv', 'rb') as f:
+import csv, os, os.path
+with open('/home/awo/ftpclient/data.csv', 'rb') as f:
    reader = csv.reader(f)
    csv_list = list(reader)
 
@@ -13,8 +13,9 @@ for i in csv_list[1::]:
    if itotal > highest_value:
       highest_value = itotal
 
-os.remove('highest.txt')
-file = open('highest.txt', 'w')
+if os.path.isfile('/home/awo/ftpclient/highest.txt'):
+	os.remove('/home/awo/ftpclient/highest.txt')
+file = open('/home/awo/ftpclient/highest.txt', 'w')
 file.write(str(highest_value))
 file.close
 print highest_value
