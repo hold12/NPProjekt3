@@ -47,7 +47,7 @@ int main()
 
     client.SendMsg("RETR data.csv\r\n", 15);
 	
-    data.SaveFile("data.csv");
+    data.SaveFile("./data.csv");
 	//data.SaveFile("test.txt");
 
     client.RecvMsg();
