@@ -1,4 +1,4 @@
-#include "NP.h"
+#include "../include/NP.h"
 
 using namespace std;
 
