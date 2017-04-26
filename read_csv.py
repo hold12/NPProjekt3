@@ -1,4 +1,4 @@
-import csv
+import csv, os
 with open('data.csv', 'rb') as f:
    reader = csv.reader(f)
    csv_list = list(reader)
