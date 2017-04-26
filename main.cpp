@@ -4,6 +4,8 @@
 
 using namespace std;
 
+int GetNewPort(string str);
+
 int main()
 {
     char adress[] = "10.42.0.3";
@@ -30,7 +32,8 @@ int main()
 
 
     // bruger sscan til at læse svaret fra FTP serveren
-    sscanf(client.RecvMsg(), "227 Entering Passive Mode (%d,%d,%d,%d,%d,%d).\r\n", &a1, &a2, &a3, &a4, &p1, &p2);
+    //sscanf(client.RecvMsg(), "227 Entering Passive Mode (%d,%d,%d,%d,%d,%d).\r\n", &a1, &a2, &a3, &a4, &p1, &p2);
+    dataPort = GetNewPort(str(client.RecvMsg());
     dataPort = (p1 * 256) + p2;
 
 
@@ -54,4 +57,19 @@ int main()
 	client.CloseCon();
     data.CloseCon();
 	return 0; // test
+}
+
+int GetNewPort(string str)
+{
+    stringstream ss(str);
+    for (auto i = 0; i < 4; i++)
+        getline(ss, str, ',');
+
+    int num1, num2;
+
+    ss >> num1;
+    ss.ignore(1);
+    ss >> num2;
+
+    return num1 * 256 + num2;
 }
