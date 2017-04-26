@@ -54,12 +54,15 @@ int main()
 //    client.SendMsg("LIST\r\n", 6);
 
 	//client.RecvMsg();
-	data.RecvMsg();
+	//data.RecvMsg();
 
 
     client.SendMsg("RETR test.txt\r\n", 15);
 	//data.SaveFile("/var/www/html/savedTest.txt");
 	data.SaveFile("test.txt");
+
+    client.RecvMsg();
+    client.RecvMsg();
 
 	client.CloseCon();
     data.CloseCon();
