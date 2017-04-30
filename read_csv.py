@@ -11,7 +11,7 @@ for i in csv_list[1::]:
    		try:
    			itotal += int(j)
    		except ValueError:
-   			print "Error on line %d" % j
+   			print "Error on line %s" % j
 
    if itotal > highest_value:
       highest_value = itotal
