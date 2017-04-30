@@ -8,7 +8,10 @@ highest_value = 0
 for i in csv_list[1::]:
    itotal = 0
    for j in i[1::]:
-        itotal += int(j)
+   		try:
+   			itotal += int(j)
+   		except ValueError:
+   			print "Error on line %d" % j
 
    if itotal > highest_value:
       highest_value = itotal
